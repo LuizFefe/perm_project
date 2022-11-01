@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#002F67;}
+</style>
+<path class="st0" d="M0,0h24v24H0V0z"/>
+<g>
+	<rect class="st0" width="24" height="24"/>
+</g>
+<path class="st0" d="M9,4C5.3,4,3.9,4.5,3.3,5h11.3C14.1,4.5,12.7,4,9,4z"/>
+<rect x="3" y="7" class="st0" width="12" height="3"/>
+<rect x="3" y="7" class="st0" width="12" height="3"/>
+<path class="st0" d="M9,4C5.3,4,3.9,4.5,3.3,5h11.3C14.1,4.5,12.7,4,9,4z"/>
+<g>
+	<circle class="st1" cx="5.5" cy="14.5" r="1.5"/>
+	<circle class="st1" cx="12.5" cy="14.5" r="1.5"/>
+	<g>
+		<g>
+			<polygon class="st1" points="22.7,17.5 19.7,17.5 19.7,14.5 17.7,14.5 17.7,17.5 14.7,17.5 14.7,19.5 17.7,19.5 17.7,22.5 
+				19.7,22.5 19.7,19.5 22.7,19.5 			"/>
+		</g>
+	</g>
+	<path class="st1" d="M9,2C4.6,2,1,2.5,1,6v10c0,0.9,0.4,1.7,1,2.2V20c0,0.5,0.5,1,1,1h1c0.5,0,1-0.5,1-1v-1h8v1c0,0.5,0.5,1,1,1v-4
+		H3.6l-0.3-0.3C3.2,16.6,3,16.4,3,16v-4h12v4.7h2V6C17,2.5,13.4,2,9,2z M9,4c3.7,0,5.1,0.5,5.7,1H3.3C3.9,4.5,5.3,4,9,4z M15,10H3V7
+		h12V10z"/>
+</g>
+</svg>

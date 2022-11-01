@@ -1,0 +1,371 @@
+
+<!-- saved from url=(0076)https://consultas.detrannet.sc.gov.br/servicos/ConsultaPontuacaocondutor.asp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2"><script type="text/javascript" async="" src="./consulta pontuaç&#227;o_files/recaptcha__pt_br.js.download" crossorigin="anonymous" integrity="sha384-CSd9xNzNowsf2XcxmpVIoABW/IWirkQUZqcOTxuCAXbHSkr7185uaU+26WP5EecB"></script><script language="javascript">
+
+
+		function fecha(servico)
+			{
+			var i=0;
+			if (document.getElementById('div_'+servico).style.display=="")
+				{
+				document.getElementById('span_'+servico).style.color="#234578";
+				document.getElementById('div_'+servico).style.display="none";
+				
+				//muda imagens
+				document.getElementById('img_'+servico).src = '/imagens/barra_esq_mais.gif';
+				document.getElementById('img4_'+servico).src = '/imagens/barra_dir_mais.gif';
+				// muda linhas
+				document.getElementById('td2_'+servico).style.borderTop='#3f658c 1px solid';
+				document.getElementById('td3_'+servico).style.borderTop='#3f658c 1px solid';				
+
+				document.getElementById('td1_'+servico).style.borderBottom='#3f658c 0px';
+				document.getElementById('td2_'+servico).style.borderBottom='#3f658c 0px';
+				document.getElementById('td3_'+servico).style.borderBottom='#3f658c 0px';				
+				document.getElementById('td4_'+servico).style.borderBottom='#3f658c 0px';								
+				
+				}
+			else
+				{
+				document.getElementById('span_'+servico).style.color="#BB390C";
+				document.getElementById('div_'+servico).style.display="";
+				
+				document.getElementById('td1_'+servico).style.backgroundImage = 'url(/imagens/barra_esq_menos.gif)';
+				document.getElementById('td4_'+servico).style.backgroundImage = 'url(/imagens/barra_dir_menos.gif)';				
+				document.getElementById('img_'+servico).src = '/imagens/barra_esq_menos_transp.gif';
+				document.getElementById('img4_'+servico).src = '/imagens/barra_dir_menos_transp.gif';
+
+				// muda linhas
+				document.getElementById('td2_'+servico).style.borderTop='#3f658c 2px solid';
+				document.getElementById('td3_'+servico).style.borderTop='#3f658c 2px solid';				
+
+				document.getElementById('td1_'+servico).style.borderBottom='#999999 1px solid';
+				document.getElementById('td2_'+servico).style.borderBottom='#999999 1px solid';
+				document.getElementById('td3_'+servico).style.borderBottom='#999999 1px solid';				
+				document.getElementById('td4_'+servico).style.borderBottom='#999999 1px solid';				
+				
+
+				}
+			}
+
+
+
+
+	function fecha1(nome,imagem)
+		{
+		var i=0;		
+		if (document.all.tags("div")[nome].style.display=="")
+			{
+			document.all.tags("div")[nome].style.display="none";
+			document.all.tags("img")[imagem].src='/imagens/'+imagem+'_mais.gif';
+			document.all.tags("table")['tb_'+imagem].style.borderBottom='1px solid #999999';
+			}
+		else
+			{
+			document.all.tags("div")[nome].style.display="";
+			document.all.tags("img")[imagem].src='/imagens/'+imagem+'_menos.gif';
+			document.all.tags("table")['tb_'+imagem].style.borderBottom='0px solid #999999';
+			}
+		}
+</script>
+
+
+<script src="./consulta pontuaç&#227;o_files/api.js.download"></script>
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	
+	<title>DETRAN/SC - Departamento Estadual de Trânsito de Santa Catarina</title>
+	<link rel="stylesheet" type="text/css" href="./consulta pontuaç&#227;o_files/veiculos2_1.css">
+	
+<script language="JavaScript">
+
+    function onSubmit(token) {
+       document.getElementById("txtToken").value = token;
+       ValidarForm();
+       document.getElementById("form1").submit();
+    }
+</script></head>
+
+
+<body class="bory">
+	<!-- Banner do Governo do Estado de Santa Catarina -->
+    <div id="barra_sc">
+          <iframe name="principal" border="0" width="980px" height="32" frameborder="0" src="./consulta pontuaç&#227;o_files/barra_sc.html" marginwidth="0" marginheight="0" scrolling="no">
+          </iframe>
+    </div>
+	<!-- Final -->
+	
+	<div id="principal" bgcolor="white">
+
+        <form id="form1" name="form1" method="post" action="https://consultas.detrannet.sc.gov.br/servicos/ConsultaPontuacaocondutor.asp">
+
+			<input type="hidden" name="oculto" size="1">
+
+            <input type="hidden" id="txtToken" name="txtToken">
+
+			<table width="100" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="white">
+				<tbody><tr>
+					<td width="100%"><img src="./consulta pontuaç&#227;o_files/topo.jpg" border="0"></td>
+				</tr>
+			</tbody></table>
+			
+			<table width="95%" align="center" class="tabela" border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+				<tbody><tr align="center">
+					<td>
+						<div class=""></div>
+					</td>
+				</tr>
+				
+				<tr><td>&nbsp;</td></tr>
+				
+				<tr align="center">
+					<td>
+						<fieldset style=" width: 95%;">
+						
+							<table width="95%" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="white">
+								<tbody><tr>
+									<td width="20%" align="right"> 
+										<b>CPF:</b>&nbsp;
+									</td>
+									<td width="80%">
+										<input type="text" size="15" maxlength="11" name="txtDocPrincipal" value="90983653968" onkeypress="IsNumeric(event);">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="20%" align="right">
+										<b>N&#186; Registro:</b>&nbsp;
+									</td>
+									<td width="80%">
+										<input type="text" size="15" maxlength="11" name="txtDocCNH" value="02305353840" onkeypress="IsNumeric(event);">&nbsp;
+										que consta na CNH - Carteira Nacional de Habilitaç&#227;o 
+									</td>
+								</tr>
+								
+								<tr align="center">
+									<td colspan="2">
+										<span class="aviso">&nbsp;</span>
+									</td>
+								</tr>
+								
+								<tr align="right" height="50">
+									<td colspan="2">
+                                       <div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="./consulta pontuaç&#227;o_files/anchor.html" width="256" height="60" role="presentation" name="a-z47pvfd0f839" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./consulta pontuaç&#227;o_files/saved_resource.html"></iframe></div><button class="g-recaptcha btn btn-default" data-sitekey="6Ld5HKUdAAAAAOdOTnRg21WOz1-gURJcDdf_uIhH" data-callback="onSubmit" data-action="submit">Consultar</button>
+                                       <input type="submit" name="btnLimpar" value="Limpar" class="btn btn-default" onclick="LimparCampos();">
+									</td>
+								</tr>					
+					
+							</tbody></table>
+						</fieldset>
+					</td>
+				</tr>
+			</tbody></table>
+			
+			
+				<div id="divPontuacao">
+					<table align="center" width="100%" border="0" bgcolor="white">
+						<tbody><tr width="100%">
+							<td align="Right" width="25%"></td>
+							<td align="Center" width="50%"><strong>CONSULTA&nbsp;&nbsp;PONTUAÇ&#195;O</strong></td>
+							<td align="Right" width="20%" nowrap="">Em :</td>
+							<td align="Right" nowrap=""> 31/08/2022 17:33 </td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<hr size="1" color="#376CB7">
+							</td>
+						</tr>
+					</tbody></table>
+					<table align="center" width="100%" border="0" bgcolor="white">
+						<tbody><tr width="100%">
+							<td align="Left" width="10%" nowrap=""><strong>CPF do Condutor:&nbsp;</strong></td>
+							<td align="Left" width="22%"> 909******68 </td>
+							<td align="right" width="16%" nowrap=""><strong>Número CNH:&nbsp;</strong></td>
+							<td align="Left" width="28%"> 023******40 </td>
+							<td align="right" width="10%" nowrap=""><strong>Período:&nbsp;</strong></td>
+							<td align="right" nowrap=""> 31/08/2017 a 31/08/2022 </td>
+						</tr>
+					</tbody></table>
+				</div>
+			
+			<div id="divDadosPontuacao">
+				<table align="center" width="100%" border="0" bgcolor="white">
+					<tbody><tr width="100%">
+						<td align="Left"><strong>Nome do Condutor:</strong> C******** V******* D* S******* </td>
+						<td align="Right"><strong>&nbsp;</strong>  </td>
+					</tr>
+						<tr>
+						<td colspan="2">
+							<hr size="1" color="#376CB7">
+						</td>
+					</tr>
+				</tbody></table>
+				<table align="center" width="100%" border="0" bgcolor="white"> 
+					<tbody><tr>
+						<!--td align="center">&nbsp;<strong>Placa</strong></td-->
+						<td align="center">&nbsp;<strong>Órg&#227;o</strong></td>
+						<td align="center">&nbsp;<strong>Número Auto</strong></td>
+						<!--td align="center">&nbsp;<strong>C&oacute;digo Infra&ccedil;&atilde;o</strong></td-->
+						<td align="center">&nbsp;<strong>Data Auto</strong></td>
+						<td align="center">&nbsp;<strong>Pontos</strong></td>
+						<td align="center">&nbsp;<strong>Situaç&#227;o</strong></td>
+					</tr>
+					
+						<tr>
+							<!--td align="center">&nbsp;</td-->
+							<td align="center">&nbsp;</td>
+							<td align="center">&nbsp;</td>
+							<!--td align="center">&nbsp;</td-->
+							<td align="center">&nbsp;</td>
+							<td align="center" nowrap="">&nbsp;</td>
+							<td align="center">&nbsp;</td>
+						</tr>
+					
+					<tr>
+						<td width="100%" colspan="7">
+							<p align="center"><font color="#cc0000">N&#227;o existe pontuaç&#227;o registrada no período.</font></p>
+						</td>
+					</tr>
+								
+				</tbody></table>
+			</div>
+			
+		</form>
+	</div>
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+<script language="JavaScript">
+	function PosicionarCursor() {
+		document.form1.txtDocPrincipal.focus();
+	}
+	
+	function LimparCampos() {
+		document.form1.oculto.value = '';
+		document.form1.txtDocCNH.value = '';
+		document.form1.txtDocPrincipal.value = '';
+	}
+	
+	function ValidarForm() {
+		
+		if (document.form1.txtDocPrincipal.value == '' || document.form1.txtDocPrincipal.value == 0) {
+			alert('Informe o CPF');
+			document.form1.txtDocPrincipal.focus();
+			return false;
+		}
+	
+		if (document.form1.txtDocCNH.value == '' || document.form1.txtDocCNH.value == 0) {
+			alert('Informe o N Registro');
+			document.form1.txtDocCNH.focus();
+			return false;
+		}
+		
+		document.form1.oculto.value = 'C';
+		
+		return true;
+	}
+	
+	function ValidaCamposEmail() {
+		
+		if (document.form1.txtDocPrincipal.value == '' || document.form1.txtDocPrincipal.value == 0) {
+			alert('Informe o CPF');
+			document.form1.txtDocPrincipal.focus();
+			return false;
+		}
+	
+		if (document.form1.txtDocCNH.value == '' || document.form1.txtDocCNH.value == 0) {
+			alert('Informe o N Registro');
+			document.form1.txtDocCNH.focus();
+			return false;
+		}
+
+		if (document.form1.txtNomeEmail.value == '' || document.form1.txtNomeEmail.value == 0) {
+			alert('Informe o nome completo');
+			document.form1.txtNomeEmail.focus();
+			return false;
+		}
+		
+		if (document.form1.txtNomeMae.value == '' || document.form1.txtNomeMae.value == 0) {
+			alert('Informe o nome da m&atilde;e');
+			document.form1.txtNomeMae.focus();
+			return false;
+		}
+		
+		if (document.form1.txtDataNasc.value == '' || document.form1.txtDataNasc.value == 0) {
+			alert('Informe a data de nascimento');
+			document.form1.txtDataNasc.focus();
+			return false;
+		}
+		
+		if (document.form1.txtSexo.value == '' || document.form1.txtSexo.value == 0) {
+			alert('Informe o sexo');
+			document.form1.txtSexo.focus();
+			return false;
+		}
+		
+		if (document.form1.txtLocalNascimento.value == '' || document.form1.txtLocalNascimento.value == 0) {
+			alert('Informe o local de nascimento');
+			document.form1.txtLocalNascimento.focus();
+			return false;
+		}
+		
+		if (document.form1.txtEmail.value == '' || document.form1.txtEmail.value == 0) {
+			alert('Informe o e-mail para contato');
+			document.form1.txtEmail.focus();
+			return false;
+		}
+		
+		document.form1.oculto.value = 'E';
+		
+		return true;
+	}
+
+
+	function IsNumeric(e) {
+		var key;
+		var keychar;
+		var reg;
+
+		if(window.event) {
+		  // for IE, e.keyCode or window.event.keyCode can be used
+		  key = e.keyCode;
+		}
+		else if(e.which) {
+		  // netscape
+		  key = e.which;
+		}
+		else {
+		  // no event, so pass through
+		  return true;
+		}
+
+		//keychar = String.fromCharCode(key);
+		//reg = /\d/;
+        //return reg.test(keychar);
+  
+  		if(window.event){   
+			if (e.keyCode < 48 || e.keyCode > 57) {
+				e.returnValue = false;
+				e.cancel = true;
+			}
+		}
+		else if (e.which){
+			if (e.which < 48 || e.which > 57) {
+				e.preventDefault();
+				e.cancel = false;
+			}
+        }
+		else if (e.charCode) {
+			//NS 6+, Mozilla 0.9+
+			if (e.charCode < 48 || e.charCode > 57) {
+				e.preventDefault();
+				e.cancel = false;
+			}
+		}
+	}
+</script>
+</body></html>

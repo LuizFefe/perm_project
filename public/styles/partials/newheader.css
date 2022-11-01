@@ -1,0 +1,306 @@
+.header-contentnew,
+.page-header {
+  text-align: center;
+}
+.logo_pref_horizontal {
+  width: 19vh;
+  max-width: 500px;
+}
+.logo_selo_horizontal {
+  width: 18vh;
+  max-width: 162px;
+  /* min-width: 115px; */
+}
+.logo_smart_horizontal {
+  width: 15vh;
+  max-width: 162px;
+  /* min-width: 115px; */
+}
+
+.logo-title {
+  max-width: 8vw;
+}
+.page-header .top-bar-container .navbar {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header .top-bar-container .navheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+blockquote {
+  margin-top: 15px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.8rem;
+}
+.headmessage-div {
+  width: 70%;
+  text-align: center;
+}
+.page-header {
+  background-color: var(--color-background);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: -40px;
+}
+
+.page-header .top-bar-container {
+  width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  /* border-bottom: 1px solid var(--color-line-in-white); */
+  /* background-color: var(--color-primary-light); */
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.page-header .top-bar-container .logo-title {
+  color: var(--color-title-in-primary);
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.page-header .top-bar-container .navbar .navbar-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page-header .top-bar-container .navbar .navbar-links li {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.page-header .top-bar-container .navbar .navbar-links li a {
+  text-decoration: none;
+  color: #003466;
+  font-size: 20px;
+  font-weight: 600;
+}
+.page-header .top-bar-container .navbar .navbar-links li a:hover {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+/** *****************************************************/
+
+/** 
+Cabecalho
+*/
+.page-header .header-contentnewnew {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 5rem; */
+}
+
+.logopmf {
+  max-width: 30rem;
+  max-width: 175px;
+  /* margin-bottom: 2rem; */
+}
+
+.page-header .header-contentnew strong {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-style: none;
+  border-width: 1px 1px 1px 25px;
+  border-color: #000 #000 #000 #3765a3;
+  font-size: 70px;
+  line-height: 42px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header .header-contentnew strong i {
+  font: 500 3rem "Archivo";
+  font-style: italic;
+  max-width: 10rem;
+  line-height: 3rem;
+  color: var(--color-text-in-primary);
+}
+
+.page-header .header-contentnew p {
+  /* max-width: 60rem; */
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: var(--color-title-in-primary);
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+.page-header .header-contentnew p i {
+  max-width: 60rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: var(--color-text-in-primary);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+/** *****************************************************/
+
+@media (min-width: 700px) {
+  #page-study #container {
+    max-width: 100vh;
+  }
+
+  /*   .page-header {
+    height: 270px;
+  } */
+
+  .page-header .top-bar-container {
+    width: 100vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .page-header .header-contentnew {
+    align-items: center;
+    white-space: nowrap;
+    max-width: 740px;
+    position: relative;
+    min-height: 105px;
+    /* margin: 0 auto; */
+    /* flex: 1 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #003466;
+  }
+
+  .page-header .header-contentnew strong {
+    max-width: 550px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo_selo_vertical {
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .logo_selo_horizontal {
+    width: 100%;
+  }
+  .logo_pref_horizontal {
+    width: 100%;
+    max-width: 500px;
+  }
+  .logo_smart_horizontal {
+    width: 100%;
+    /* min-width: 115px; */
+  }
+  .page-header .top-bar-container .navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-message {
+    font-size: 3vw;
+  }
+  .headmessage-div {
+    width: 90%;
+  }
+  .page-header .header-contentnew strong {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-style: none;
+    border-width: 1px 1px 1px 25px;
+    border-color: #000 #000 #000 #3765a3;
+    font-size: 10vw;
+    line-height: 42px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .logo-title {
+    max-width: 18vw;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .page-header .top-bar-container .navbar .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  .page-header .top-bar-container .navbar .navbar-links.active {
+    display: flex;
+  }
+  .page-header .top-bar-container .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .page-header .top-bar-container .navbar .navbar-links li {
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .page-header .header-contentnew {
+    align-items: center;
+    white-space: nowrap;
+    max-width: 740px;
+    position: relative;
+    min-height: 105px;
+    /* margin: 0 auto; */
+    /* flex: 1 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #003466;
+  }
+}

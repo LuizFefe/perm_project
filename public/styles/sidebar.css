@@ -1,0 +1,142 @@
+body {
+  font-family: "montserrat";
+  display: block;
+}
+#cont {
+  text-align: center;
+  width: 70vw;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #003466;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.dropdown-btn {
+  border: 0;
+  background-color: #003466;
+}
+
+.sidebar a,
+.dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebaritem:hover,
+.dropdown-btn:hover {
+  background-color: #022b52;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.closebtn:hover {
+  background-color: #003466;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #003466;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+.openbtn:focus {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #003466;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+.openbtn:hover {
+  background-color: #022b52;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  /* padding: 16px; */
+}
+#page-header {
+  transition: margin-left 0.5s;
+  /* padding: 16px; */
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  /* background-color: green; */
+  color: white;
+  border: 0;
+}
+
+.dropdownitem:hover {
+  background-color: green;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #022b52;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.dropdown-container a {
+  font-size: 17.6px;
+}
+
+.ativo {
+  background-color: green;
+}
+
+.ativo:hover {
+  background-color: green;
+}
+
+#downesc {
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

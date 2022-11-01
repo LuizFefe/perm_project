@@ -1,0 +1,286 @@
+/* CSS - Cascading Style Sheet */
+:root {
+  --color-background: #f0f0f7;
+  --color-primary-lighter: #4a79a7;
+  --color-primary-light: #00529e;
+  --color-primary: #003466;
+  --color-primary-dark: #4b7aaa;
+  --color-primary-darker: #3e668e;
+  --color-secondary: #04d361;
+  --color-secondary-dark: #04bf58;
+  --color-secondary-alt: #04a3d3;
+  --color-secondary-alt-dark: #038fb9;
+  --color-title-in-primary: #ffffff;
+  --color-text-in-primary: #c2e1ff;
+  --color-text-title: #00203d;
+  --color-text-title-i: #00529e;
+  --color-text-complement: #989fa6;
+  --color-text-message: #ff0909;
+  --color-text-message-light: #fc5e5e;
+  --color-text-base: #727b83;
+  --color-line-in-white: #e6e6f0;
+  --color-input-background: #ebf1f7;
+  --color-button-text: #ffffff;
+  --color-box-base: #ffffff;
+  --color-box-footer: #fafafc;
+  --color-small-info: #c1bccc;
+
+  /* Tamanho da fonte padrão: 16px - 100% - 1rem  */
+  font-size: 60%; /* controle das medidas rem */
+}
+#page-cadastrar-operadoras .login-button {
+  background-color: #003466;
+}
+.footer-text {
+  text-align: center;
+}
+.footercadastro {
+  flex-direction: column;
+}
+.page-header .top-bar-container .navbar .navbar-links li a {
+  font-size: 20px;
+}
+s .flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.ui-autocomplete {
+  position: absolute;
+  cursor: default;
+  z-index: 1001 !important;
+}
+body,
+input,
+button,
+textarea {
+  /* font: 500 1.6rem Poppins; */
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  color: var(--color-text-title);
+}
+blockquote {
+  margin-top: 15px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 4rem;
+}
+/* body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+body {
+  position: relative;
+}
+body::after {
+  content: "";
+  display: block;
+  height: 100px;
+} */
+
+.headeractualized {
+  color: #003466;
+  font-size: 40px;
+}
+.footer {
+  color: white;
+  text-align: center;
+  padding: 5px;
+  background-color: #003466;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+#container {
+  width: 90vw;
+  /*  max-width: 80vw;
+  min-width: 80vw; */
+  margin-bottom: 70px;
+}
+.page-header .header-content strong {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-style: none;
+  border-width: 1px 1px 1px 25px;
+  border-color: #000 #000 #000 #3765a3;
+  font-size: 70px;
+  /* line-height: 42px; */
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 50px 0 0 0;
+}
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+/* tirar dos locals? */
+
+fieldset legend {
+  font: 700 2.4rem Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+fieldset legend i {
+  font: 500 2.2rem Archivo;
+  font-style: italic;
+
+  color: var(--color-text-title-i);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+article legend {
+  font: 700 2.4rem Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+article legend i {
+  font: 500 2.2rem Archivo;
+  font-style: italic;
+  color: var(--color-text-title-i);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.box-detail {
+  text-align: center;
+  width: fit-content;
+  background-color: var(--color-background);
+  border: 1px dashed var(--color-primary);
+  border-radius: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  align-content: flex-start;
+}
+.link-box:visited,
+.link-box:link {
+  font: 600 1.5rem Archivo;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-style: solid;
+  border-color: var(--color-primary);
+  border-width: 1px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+/* a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: var(--color-title-in-primary);
+} */
+
+.logo_selo_horizontal {
+  width: 18vh;
+  max-width: 162px;
+  min-width: 115px;
+}
+.logo_selo_vertical {
+  height: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.instrucoes {
+  text-align: justify;
+  line-height: 2.4rem;
+}
+@media (max-width: 500px) {
+  .logo_selo_horizontal {
+    width: 100%;
+    max-width: 162px;
+    min-width: 0px;
+  }
+  .page-header .header-content strong {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-style: none;
+    border-width: 1px 1px 1px 25px;
+    border-color: #000 #000 #000 #3765a3;
+    font-size: 50px;
+    line-height: 52px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 50px 0 0 0;
+  }
+  blockquote {
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+    line-height: normal;
+    font-size: 3.5rem;
+  }
+  .groupbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .minhas-viagens-item {
+    width: 100%;
+  }
+}
